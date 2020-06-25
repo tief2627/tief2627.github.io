@@ -1,0 +1,276 @@
+@charset "utf-8";
+@import url("menu.css");
+/* CSS Document */
+
+/*basic settings*/
+
+body{
+	font-family:Verdana, Geneva, sans-serif, "微軟正黑體";
+	margin:0;
+	padding:0;
+	background-image:url(../images/background-10.png);
+}
+
+::-moz-selection{ /*Firefox*/
+	color:#fff;
+	background:#f30;
+}
+
+::selection{
+	color:#fff;
+	background:#f30;
+}
+
+/*header*/
+
+header{
+	position:fixed;
+	top:0;
+	width:100%;
+	min-width:980px;
+	box-sizing:border-box;
+	background: rgba(0, 0, 0, 0.5);
+	z-index:1000;
+}
+
+nav{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+/*banner*/
+.banner{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 980px;
+	height: 550px;
+	background: url(../images/Multimedia-03.png)no-repeat;
+	background-size: 100%;
+}
+
+.anitext{
+	position:absolute;
+	padding:10px;
+	left:18%;
+	top:55%;
+	color:#fff;
+	background:#DD264E;
+	font-size:60px;
+	font-weight:bold;
+	opacity:0.8;
+	
+	-webkit-animation-name: ant; /* Safari 4.0 - 8.0 */
+	animation-name: ant;
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	animation-duration: 3s;
+	-webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+	animation-iteration-count: 1;
+	-webkit-animation-timing-function: ease; /* Safari 4.0 - 8.0 */
+	animation-timing-function: ease;
+	
+}
+@keyframes ant{
+	from {top: 80%;opacity: 0;background: #000;}
+	to {top: 55%; opacity: 0.8;background: #DD264E;}
+}
+
+.space{
+	text-align: center;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 980px;
+	height: 100px;
+	background-size: 100%;
+}
+
+/* section */
+
+section{
+	width:80%;
+	min-width: 980px;
+	margin:auto;
+	margin-top: 70px;
+	margin-bottom: 150px;
+}
+
+.gif1{
+width:200px;　/*DIV區塊寬度*/
+line-height:50px;　/*DIV區塊高度*/
+padding:20px;　/*DIV區塊內距，參閱：CSS padding 內距。*/
+border:2px blue solid;　/*DIV區塊邊框，參閱：CSS border 邊框設計。*/
+margin-right:10px;　/*靠右外距，參閱：CSS margin 邊界使用介紹範例教學。*/
+float:left;
+}
+
+.gif2{
+width:200px;
+padding:20px;
+position:absolute;
+left:1075px;
+top:1864px;
+}
+
+.gif3{
+width:200px;
+padding:20px;
+position:absolute;
+left:1075px;
+top:2170px;
+}
+
+
+.gif1:hover img{
+	-webkit-filter:brightness(30%);
+	filter:brightness(30%);
+}
+
+.gif1:hover fadebox{
+	opacity: 1;
+}
+
+.gif2:hover img{
+	-webkit-filter:brightness(30%);
+	filter:brightness(30%);
+}
+
+.gif2:hover fadebox{
+	opacity: 1;
+}
+
+.gif3:hover img{
+	-webkit-filter:brightness(30%);
+	filter:brightness(30%);
+}
+
+.gif3:hover fadebox{
+	opacity: 1;
+}
+introbox h1{
+	
+}
+
+.introbox{
+	align=center;
+	width: 33.33%;
+	line-height: 1.5em;
+	margin-top: 105px;
+	margin-bottom: 150px;
+	text-align: justify;
+}
+
+.introbox h1{
+	color: #263679;
+	font-size : 45px;
+	line-height: 1.5em;
+}
+
+.introbox p{
+	text-align: justify;
+}
+
+.fadebox{
+	position:absolute;
+	top:50%;
+	left:50%;
+	-ms-transform: translate(-50%,-50%);/* IE 9 */
+	-webkit-transform: translate(-50%,-50%); /* Safari*/
+	transform: translate(-50%,-50%); /*移動圖的重心到中間*/
+	-webkit-transition:0.5s ease; /*Safari*/
+	transition:0.5s ease;
+	opacity: 0;
+}
+
+.picbox:hover img{
+	-webkit-filter:brightness(30%);
+	filter:brightness(30%);
+}
+
+.picbox:hover fadebox{
+	opacity:1;
+}
+
+.fadebox a{
+	display: block;
+	padding: 16px 32px;
+	color:#fff;
+	text-decoration: none;
+	background:#F30;
+}
+
+
+.space2{
+	text-align: center;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 980px;
+	height: 690px;
+	background-size: 100%;
+	background-color:#EE7288;
+	z-index:-1;
+}
+
+.space2 p{
+	text-align: center;
+	display: block;
+	position: relative;
+	margin-top: 65px;
+	font-size: 70px;
+	color: aliceblue;
+	z-index:-1;
+}
+
+iframe{
+	position: absolute;
+	left:345px;
+	top:3170px;	
+	z-index:1;
+}
+
+.space3{
+	text-align: center;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 980px;
+	height: 690px;
+	background-size: 100%;
+	z-index:-1;
+}
+
+
+.space3{
+	text-align: center;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 980px;
+	height: 690px;
+	background-size: 100%;
+	z-index:-1;
+}
+
+.final{
+	text-align: center;
+	display: block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background-size: 100%;
+}
+
+/*footer*/
+
+footer{
+	clear:both;
+	padding:50px;
+	text-align:center;	
+}
